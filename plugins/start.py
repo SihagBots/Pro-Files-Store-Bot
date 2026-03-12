@@ -45,7 +45,7 @@ async def issue_verify_link(client: Client, message: Message, payload: str):
     await client.send_photo(
         chat_id=message.chat.id,
         photo=short_photo,
-        caption=f"{short_caption}\n\n⏱ Verify timer: {getattr(client, 'verify_cooldown', 30)}s",
+        caption=f"{short_caption}\n\n⏱Dont Bypass Otherwise Direct Ban",
         reply_markup=InlineKeyboardMarkup([
             [
                 InlineKeyboardButton("• ᴏᴘᴇɴ ʟɪɴᴋ", url=service_link),
